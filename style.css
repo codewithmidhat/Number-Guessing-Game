@@ -1,24 +1,26 @@
 
     * {
   color: #333;
-  font-family: 'Segoe UI', sans-serif;
+ font-family: 'Poppins', sans-serif;
 }
 
 body{
     display: flex;
     justify-content: center;
+    align-items: center;
   background: linear-gradient(to right, #ffecd2 50%, #fcb69f 50%);
 }
 #main-content
 {
     height: 90%;
     width: 80%;
-background-color: rgba(0, 0, 0, 0.2);
-border: 1px solid rgba(255, 255, 255, 0.3);
-     display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     
 }
 #main-heading 
@@ -27,20 +29,32 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 #paragraph-div 
 {
+  
     display: flex;
     text-align: center;
     justify-content: center;
 }
 #main-paragraph
 {
-    width: 600px;
+    width: 83%;
+}
+#Previous-guesses
+{
+    width: 83%;
+    margin: 0%;
+    padding: 0%;
+}
+#prev-guess-para
+{
+     margin: 0%;
+    padding: 0%;
 }
 #main-section
 {
     margin: 0%;
     padding: 0%;
-    height: 50%;
-    width: 50%;
+    height: 60%;
+    width: 90%;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -60,7 +74,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .wrong
 {
-    width: 100%;
+    width: 90%;
     height: 25px;
     background-color: red;
     display: flex;
@@ -70,7 +84,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .right
 {
-     width: 100%;
+     width: 90%;
      height: 25px;
       display: flex;
     text-align: center;
@@ -86,6 +100,9 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 {
     visibility: visible;
 }
+#main-content {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 .submit-btn,.start-new-game
 {
     padding: 2px;
@@ -95,4 +112,36 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 background-color: #424242;
 color: white;
 cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  #main-content {
+    width: 95%;
+    margin-top: 5px;
+    padding: 10px;
+  }
+
+  #main-paragraph,
+  #Previous-guesses,
+  .wrong,
+  .right {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  #bar {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .submit-btn,
+  .start-new-game {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+}
+.submit-btn:hover,
+.start-new-game:hover {
+  background-color: #333;
 }
