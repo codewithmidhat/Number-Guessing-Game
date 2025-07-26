@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-content" id="main-content">
+
+    <h1 id="main-heading">Number guessing game</h1>
+
+    <div id="paragraph-div">
+        <p id="main-paragraph">We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was high or low.</p>
+    </div>
+    
+    <div id="main-section">
+       <p>Enter a Guess</p>
+       <input type="text" id="bar">
+       <br>
+       <button class="submit-btn"
+       onclick="submit()">Submit Guess</button>
+       <br>
+      <div id="Previous-guesses">
+      <p class="prev-guess-para">Previous Guesses :</p>
+      </div>
+      <br>
+      <div class="Result">
+      </div>
+       <br>
+      <div class="Result-explain">
+      </div>
+       <br>
+ 
+       <button  class="start-new-game" onclick="reset()">
+       Start new game
+       </button>
+       <br>
+    </div>
+  
+        
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>

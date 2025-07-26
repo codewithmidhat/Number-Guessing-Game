@@ -1,0 +1,98 @@
+
+    * {
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+  background: linear-gradient(to right, #ffecd2 50%, #fcb69f 50%);
+}
+#main-content
+{
+    height: 90%;
+    width: 80%;
+background-color: rgba(0, 0, 0, 0.2);
+border: 1px solid rgba(255, 255, 255, 0.3);
+     display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+    
+}
+#main-heading 
+{
+   text-align: center;
+}
+#paragraph-div 
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+#main-paragraph
+{
+    width: 600px;
+}
+#main-section
+{
+    margin: 0%;
+    padding: 0%;
+    height: 50%;
+    width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+#bar
+{
+    height: 30px;
+}
+.prev-guess-para
+{
+    visibility: hidden;
+}
+.visibility
+{
+    visibility:visible;
+}
+.wrong
+{
+    width: 100%;
+    height: 25px;
+    background-color: red;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.right
+{
+     width: 100%;
+     height: 25px;
+      display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+}
+.start-new-game
+{
+    visibility: hidden;
+}
+.newGame
+{
+    visibility: visible;
+}
+.submit-btn,.start-new-game
+{
+    padding: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+background-color: #424242;
+color: white;
+cursor: pointer;
+}
